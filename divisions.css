@@ -1,0 +1,303 @@
+/* navbar */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F8F1F1;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 8;
+    justify-content: space-between;
+    background-color: #19456B;
+    color: #F8F1F1;
+    font-family: valorant;
+}
+
+.brand-title {
+    font-size: 40px;
+    padding: 10px 10px 10px 50px;
+}
+
+.navbar-links {
+    margin-top: 10px;
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+.navbar-links li:hover {
+    background-color: #16C79A;
+}
+
+.toggle-button {
+    position: absolute;
+    margin-top: 15px;
+    right: 15px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .brand-title {
+        font-size: 30px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: 7px 15px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/* body */
+.title {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 5vw;
+    font-size: 2.5vw;
+    color: #11698E;
+    font-family: valorant;
+}
+
+main {
+    font-family: poppins;
+    color: white;
+}
+
+.division-1 h1{
+    margin-left: 18vw;
+    padding-left: 0.5vw;
+    background-color: #11698E;
+    width: 11vw;
+    font-size: 2vw;
+}
+
+#card {
+    background-color: #16C79A;
+    width: 60vw;
+    margin-left: 18vw;
+    padding-bottom: 1vw;
+}
+
+.special-1 img{
+    padding-top: 5vw;
+    width: 20vw;
+    text-align: center;
+}
+
+.photo {
+    display: flex;
+    padding-top: 1.5vw;
+}
+
+.photo-1 img {
+    width: 20vw;
+    text-align: center;
+}
+
+.name{
+    display: flex;
+    color: black;
+}
+
+.name-1 h2{
+    width: 20vw;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.region{
+    display: flex;
+}
+
+.region-1 h3{
+    width: 20vw;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.box-photo {
+    padding-top: 5.5vw;
+    width: 100%;
+}
+
+.box img {
+    width: 15vw;
+}
+
+.box {
+    text-align: center;
+    width: 30%;
+}
+
+.division-2 h1{
+    margin-left: 7.5vw;
+    margin-top: 5vw;
+    padding-left: 0.5vw;
+    background-color: #11698E;
+    width: 11vw;
+    font-size: 2vw;
+}
+
+#card-2 {
+    background-color: #16C79A;
+    width: 80vw;
+    margin-left: 7.5vw;
+    padding-bottom: 1vw;
+}
+
+.photo {
+    display: flex;
+    padding-top: 1.5vw;
+}
+
+.photo-2 img {
+    width: 20vw;
+    text-align: center;
+}
+
+.division-3 h1{
+    margin-left: 7.5vw;
+    margin-top: 5vw;
+    padding-left: 0.5vw;
+    background-color: #11698E;
+    width: 11.5vw;
+    font-size: 2vw;
+}
+
+/* footer  */
+footer {
+    background-color: #19456B;
+}
+
+.social{
+    width: 33%;
+    color: white;
+    margin-top: 5%;
+    padding-top: 1vw;
+    margin-left: 43.5%;
+    font-size: 1vw;
+}
+
+.logo-footer{
+    margin-top: 2vw;
+    display: flex;
+}
+
+.logo-1{
+    width: 5vw;
+    margin-right: 1%;
+}
+
+.logo-2{
+    width: 5vw;
+    margin-right: 1%;
+}
+
+.logo-3{
+    width: 5vw;
+    margin-right: 1%;
+}
+
+.logo-footer a img{
+    width: 50%;
+}
+
+.footer-title {
+    font-family: valorant;
+    font-size: 1.5vw;
+    color: #F8F1F1;
+    text-align: center;
+    padding-top: 2.5vw;
+}
+
+.copyright {
+    font-family: poppins;
+    font-size: 1vw;
+    color: #F8F1F1;
+    text-align: center;
+    padding-top: 1.5vw;
+}
+
+.additional {
+    display: flex;
+    padding-top: 2vw;
+    padding-bottom: 2.5vw;
+    font-size: 0.5vw;
+    color: #16C79A;
+    font-family: poppins;
+}
+
+.add-1 {
+    width: 33%;
+    margin-left: 33%;
+}
+
+.add-2 {
+    width: 33%;
+}
+
+.add-3 {
+    width: 33%;
+    margin-right: 30%;
+}
